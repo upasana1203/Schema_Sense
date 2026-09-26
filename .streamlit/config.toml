@@ -1,0 +1,4 @@
+[server]
+# Caps uploaded file size (MB) to avoid someone uploading a huge DB file
+# on a free-tier deployment.
+maxUploadSize = 25
