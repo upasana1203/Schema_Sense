@@ -15,7 +15,7 @@ class GenerateQuery:
         # Prepare the schema context for the prompt
         prompt = View().prompt(nlp_input, schema_context)
         try:
-            model = genai.GenerativeModel('gemini-2.5-flash')
+            model = genai.GenerativeModel('gemini-3.8-flash')
             response = model.generate_content(prompt)
 
             # Extract and return the generated SQL query from the response

@@ -74,7 +74,7 @@ Built on top of an open-source Gemini-based text-to-SQL starter project, extende
 - Basic per-session rate limiting to prevent API quota abuse
 - Temp file cleanup after each upload, instead of leaving uploaded databases on disk indefinitely
 - A capped upload size (25MB) to prevent oversized file uploads
-- Updated to the current Gemini model (`gemini-2.5-flash`)
+- Updated to the current Gemini model (`gemini-3.8-flash`)
 - Removed a bug in query cleanup that stripped every occurrence of the substring "sql" from generated queries, which could silently corrupt queries touching tables/columns containing that substring
 
 This project is licensed under the Apache 2.0 License — see `LICENSE` for details.
